@@ -6,15 +6,11 @@ Implementations of common data structures and algorithms in Java.
 
 
 
-\## Quick links
+\## Folders
 
-\- Employer-friendly curated work: \[portfolio](./portfolio)
+\- portfolio: curated, employer-friendly work
 
-\- LeetCode solutions: \[leetcode](./leetcode)
+\- leetcode: practice solutions
 
-\- Course labs (provenance): \[Labs](./Labs)
-
-\## How to run
-
-Most items can be compiled and run with `javac` / `java`. See folder READMEs for exact commands.
+\- Labs: course labs / provenance
 
