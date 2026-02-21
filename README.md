@@ -8,13 +8,11 @@ Implementations of common data structures and algorithms in Java.
 
 \## Quick links
 
-\- Employer-friendly curated work: \[portfolio/](./portfolio)
+\- Employer-friendly curated work: \[portfolio](./portfolio)
 
-\- LeetCode solutions: \[leetcode/](./leetcode)
+\- LeetCode solutions: \[leetcode](./leetcode)
 
-\- Course labs (provenance): \[Labs/](./Labs)
-
-
+\- Course labs (provenance): \[Labs](./Labs)
 
 \## How to run
 
