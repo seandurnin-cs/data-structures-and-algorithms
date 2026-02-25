@@ -17,19 +17,16 @@ class ListNode {
 
 class Solution {
     public ListNode reverseList(ListNode head) {
-        ListNode Bookmark;
+        ListNode next;
         ListNode curr = head;
         ListNode prev = null;
         while(curr != null) {
-            Bookmark = curr.next;
+            next = curr.next;
             curr.next = prev;
             prev = curr;
-            curr = Bookmark;
-            if(curr == null) {
-                head = prev;
-            }
+            curr = next;
         }
-        return head;
+        return prev;
     }
 }
 
