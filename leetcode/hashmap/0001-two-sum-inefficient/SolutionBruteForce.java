@@ -1,16 +1,24 @@
-import java.util.Scanner;
 public class SolutionBruteForce {
     public int[] twoSum(int[] nums, int target) {
-        return nums;
+
+        for(int i = 0; i < nums.length; i++) {
+            for(int j = 0; j < nums.length; j++) {
+                if(i != j && (nums[i] + nums[j] == target)) {
+                    return new int[] {i, j};
+                }
+            }
+        }
+        return new int[] {0,0};
     }
 
     public static void main(String args[]) {
-        Scanner uI = new Scanner(System.in);
-        int[] test = new int[2];
-        for(int i = 0; i < 2; i++) {
-            test[i] = uI.nextInt();
-            System.out.print(test[i]);
-        }
-        uI.close();
+        SolutionBruteForce x = new SolutionBruteForce();
+
+        int[] nums = { 2, 7, 11, 15 };
+        int target = 9;
+
+        int[] answer = x.twoSum(nums, target);
+
+        System.out.println(answer[0] + ", " + answer[1]);
     }
 }
