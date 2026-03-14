@@ -1,4 +1,3 @@
-
 public class reverseBits {
 
     public static void main(String args[]) {
@@ -11,16 +10,12 @@ public class reverseBits {
     }
 
     public static int reverseBits(int n) {
-        String nStr = Integer.toBinaryString(n);
-        while(nStr.length() < 31) {
-            nStr = "0" + nStr;
+        int x = 0;
+        for(int i = 0; i < 31; i++) {
+            x = x + (n & 1);
+            x = x << 1;
+            n = n >>> 1;
         }
-
-        StringBuilder reversed = new StringBuilder(nStr);
-
-        reversed.reverse();
-        nStr = reversed.toString();
-        return Integer.parseInt(nStr, 2);
-
+        return x;
     }
 }
