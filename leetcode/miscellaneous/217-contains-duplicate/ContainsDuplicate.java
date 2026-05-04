@@ -7,15 +7,9 @@ public class ContainsDuplicate {
     
     public static boolean containsDuplicate(int[] nums) {
         Arrays.sort(nums);
-        int temp;
-        for(int i = 0; i < nums.length; i++) {
-            temp = nums[i];
-            nums[i] = nums[i] - 1;
-            if(Arrays.binarySearch(nums, temp) >= 0) {
-                nums[i] = temp;
+        for(int i = 0; i < nums.length-1; i++) {
+            if(nums[i] == nums[i+1]) {
                 return true;
-            } else {
-                nums [i] = temp;
             }
         }
         return false;
